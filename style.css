@@ -1,0 +1,182 @@
+/* 🌟 Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #121212;
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* 🔥 Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    color: #ff6600;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 🛍️ Product Section */
+.products {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ff9900;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;  /* Ensures perfect spacing */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 165, 0, 0.5);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: white; /* Ensures visibility */
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* 🛒 Buttons */
+button {
+    background: linear-gradient(45deg, #ff6600, #ff9900);
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(255, 102, 0, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff6600);
+    transform: scale(1.1);
+}
+
+/* 🛍️ Shopping Cart Modal */
+.cart-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+}
+
+.cart-modal h2 {
+    font-size: 24px;
+    color: #ffcc00;
+}
+
+.cart-modal ul {
+    list-style: none;
+    padding: 0;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.cart-modal ul li {
+    font-size: 16px;
+    margin: 10px 0;
+    color: white;
+}
+
+.cart-modal button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ⚡ Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    margin-top: 30px;
+}
